@@ -1,0 +1,92 @@
+red = #FC3A51
+orange = #F5B349
+blue = #248F8D
+black = #373737
+dark = #000
+light = #FAFAFA
+
+*
+  box-sizing border-box
+
+html
+body
+  height 100%
+
+body
+  display flex
+  flex-direction column
+  justify-content center
+  align-items stretch
+  align-content stretch
+  height 100%
+  width 100%
+  margin 0
+  padding 0
+  background-color #25232D
+
+main
+  flex 1
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  align-content center
+
+
+.phone
+  position relative
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  align-content center
+  width 320px
+  height 568px
+  background-color dark
+  box-shadow 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+.range
+  position relative
+  width 90%
+  max-width 250px
+  height 5px
+  transform rotate(90deg)
+
+.meter
+  position absolute
+  width 100%
+  height 100%
+  background-image linear-gradient(to right, red, orange, blue)
+  clip-path url(#path)
+  -webkit-clip-path url(#path)
+
+input[type=range]
+  position absolute
+  -webkit-appearance none
+  width 100%
+  height 100%
+  margin 0
+  background transparent
+
+
+input[type=range]::-webkit-slider-thumb
+  -webkit-appearance none
+  width 40px
+  height 40px
+  border-radius 40px
+  border 2px solid light
+  background-color dark
+
+input[type=range]:focus
+  outline none
+
+
+#world
+  position absolute
+  top 0
+  left 0
+  width 320px
+  height 568px
+  margin 0
+  padding 0
+  z-index 0

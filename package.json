@@ -1,0 +1,23 @@
+{
+  "name": "mobile-time",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devstartt": "bankai start --css.use sheetify-stylus",
+    "build": "bankai build --css.use sheetify-stylus",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "William Castandet <wcastand@gmail.com> (https://github.com/wcastand)",
+  "license": "MIT",
+  "dependencies": {
+    "cache-element": "^1.1.1",
+    "bankai": "^3.3.1",
+    "es2020": "^1.1.9",
+    "sheetify": "^5.1.1",
+    "sheetify-stylus": "^1.0.2",
+    "choo": "^3.3.0"
+  }
+}
